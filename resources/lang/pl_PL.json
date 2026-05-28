@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "lang": "pl_PL",
+    "name": "Witaj Polsko!",
+    "author": "miskaa"
+  },
+  "OptionsLayer": {
+    "main-layer": {
+      "background": {
+        "title": "Ustawienia"
+      },
+      "options-menu": {
+        "account-button": {
+          "Account": "Konto"
+        },
+        "how-to-play-button": {
+          "How To Play": "Jak Grac"
+        },
+        "options-button": {
+          "Options": "Opcje"
+        },
+        "graphics-button": {
+          "Graphics": "Grafika"
+        },
+        "rate-button": {
+          "Rate": "Ocen"
+        },
+        "songs-button": {
+          "Songs": "Pios."
+        },
+        "help-button": {
+          "Help": "Pomoc"
+        }
+      },
+      "music-label": "Muzyka",
+      "sfx-label": "Efekty Dzwiekowe",
+      "menu-music-label": "Menu Muzyka"
+    }
+  },
+  "VideoOptionsLayer": {
+    "main-layer": {
+      "title": "Ustawienia graf.",
+      "fullscreen-label": "Pelny Ekran",
+      "borderless-label": "Okno bez obramowania",
+      "fix-label": "Poprawa",
+      "texture-label": "Jakosc tekstur",
+      "res-label": "Rozdzielczosc",
+
+      "buttons-menu": {
+        "advanced-button": {
+          "button-sprite": {
+            "advanced-label": "Zaaw."
+          }
+        }, "back-button": {
+          "button-sprite": {
+            "back-label": "Wst."
+          }
+        }, "apply-button": {
+          "button-sprite": {
+            "apply-label": "Zasts."
+          }
+        }
+      }
+    }
+  },
+  "MoreVideoOptionsLayer": {
+    "main-layer": {
+      "title": "Zaawansowane ust. graf.",
+      "label-layer": {
+        "vsync-label": "V-Sync",
+        "showfps-label": "Pokaz FPS",
+        "unlockfps-label": "Odblokuj FPS"
+      }, "buttons-menu": {
+        "apply-button": {
+          "button-sprite": {
+            "apply-label": "Zasts."
+          }
+        }
+      }
+    }
+  },
+  "LevelSelectLayer": {
+    "main-layer": {
+      "levels-list": {
+        "level-pages": {
+          "level-page-1": {
+            "normal-mode-label": "Tryb Normalny",
+            "practice-mode-label": "Tryb Cwiczenia"
+          }, "level-page-2": {
+            "normal-mode-label": "Tryb Normalny",
+            "practice-mode-label": "Tryb Cwiczenia"
+          }, "level-page-3": {
+            "normal-mode-label": "Tryb Normalny",
+            "practice-mode-label": "Tryb Cwiczenia",
+            "coming-soon-label": "Juz wkrotce"
+          }
+        }
+      },
+      "bottom-center-menu": {
+        "download-soundtrack-button": {
+          "download-soundtrack-label": "Pobierz sciezke dzwiekowa"
+        }
+      }
+    }
+  },
+  "StatsLayer": {
+    "main-layer": {
+      "background": {
+        "title": "Statystyki"
+      }
+    }
+  },
+  "LevelSearchLayer": {
+    "quick-search-title": "Szybkie wyszukiwanie",
+    "filters-title": "Filtry",
+    "quick-search-menu": {
+      "most-downloaded-button": {
+        "Downloads": "Pobrania"
+      },
+      "most-liked-button": {
+        "Likes": "Polub."
+      },
+      "sent-button": {
+        "Sent": "Wysl."
+      },
+      "trending-button": {
+        "Trending": "Trend."
+      },
+      "recent-button": {
+        "Recent": "Ostatn."
+      },
+      "magic-button": {
+        "Magic": "Magicz."
+      },
+      "awarded-button": {
+        "Awarded": "Wyrozn."
+      },
+      "followed-button": {
+        "Followed": "Obserw."
+      },
+      "friends-button": {
+        "Friends": "Przyjac."
+      }
+    },
+    "length-filter-menu": {
+      "tiny-filter-button": {
+        "Tiny": "Maly"
+      },
+      "short-filter-button": {
+        "Short": "Krotki"
+      },
+      "medium-filter-button": {
+        "Medium": "Sredni"
+      },
+      "long-filter-button": {
+        "Long": "Dlugi"
+      }
+    },
+    "search-bar": {
+      "Enter a level, user or id": "Wpisz poz., uzyt., lub ID"
+    }
+  },
+  "PauseLayer": {
+    "music-label": "Muzyka",
+    "sfx-label": "Efekty Dzwiekowe",
+    "normal-mode-label": "Tryb Normalny",
+    "practice-mode-label": "Tryb Cwiczenia"
+  },
+  "LevelBrowserLayer": {
+    "GJListLayer": {
+      "title": "Poziomy"
+    }
+  },
+  "LevelBrowserLayerLevelCell": {
+    "LevelCell": {
+      "main-layer": {
+        "length-label": {
+          "Tiny": "Maly",
+          "Short": "Krotki",
+          "Medium": "Sredni",
+          "Long": "Dlugi"
+        },
+        "info-label": {
+          "Verified": "Zweryf.",
+          "Unverified": "Nie Zweryf.",
+          "Uploaded": "Opublik."
+        },
+        "main-menu": {
+          "view-button": {
+            "View": "Zob."
+          }
+        }
+      }
+    }
+  },
+  "LevelInfoLayer": {
+    "length-label": {
+      "Tiny": "Maly",
+      "Short": "Krotki",
+      "Medium": "Sredni",
+      "Long": "Dlugi"
+    },
+    "normal-mode-label": "Tryb Normalny",
+    "practice-mode-label": "Tryb Cwiczenia"
+  },
+  "InfoLayer": {
+    "description-area": {
+      "(No description provided)": "           (Brak opisu)"
+    },
+    "main-menu": {
+      "load-comments-button": {
+        "Load Comments": "Pok. komen."
+      },
+      "original-level-button": {
+        "Original": "Orig."
+      }
+    },
+    "no-comments": "Brak komentarzy"
+  }
+}

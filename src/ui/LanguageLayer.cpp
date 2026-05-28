@@ -48,7 +48,7 @@ void LanguageLayer::setTabError(TabWidgets& widgets, char const* text) {
 void LanguageLayer::setPaginationVisible(bool visible) {
     if (m_prevPageBtn) m_prevPageBtn->setVisible(visible);
     if (m_nextPageBtn) m_nextPageBtn->setVisible(visible);
-
+}
 
 void LanguageLayer::setPageText(std::string const& text) {
     if (m_pageLabel) {

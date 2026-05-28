@@ -1,6 +1,5 @@
 #include "LanguageLayer.hpp"
 #include <Geode/utils/web.hpp>
-#include <Geode/ui/GeodeUI.hpp>
 
 using namespace geode::prelude;
 
@@ -402,7 +401,10 @@ bool LanguageLayer::init() {
     m_downloadedWidgets = createTabWidgets();
     m_browseWidgets = createTabWidgets();
 
-    m_tabHost = CCLayerMultiplex::create(m_downloadedWidgets.layer, m_browseWidgets.layer, nullptr);
+    m_tabHost = CCLayerMultiplexR::create({
+        m_downloadedWidgets.layer,
+        m_browseWidgets.layer,
+    });
     m_tabHost->setContentSize(winSize);
     m_tabHost->setPosition({ 0.f, -12.5f });
     this->addChild(m_tabHost);

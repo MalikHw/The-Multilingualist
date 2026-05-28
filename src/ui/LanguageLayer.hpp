@@ -2,7 +2,8 @@
 
 #include <Geode/Geode.hpp>
 #include <Geode/utils/web.hpp>
-#include <Geode/ui/GeodeUI.hpp>
+#include "nodes/GeodeTabSprite.hpp"
+#include "nodes/CCLayerMultiplexR.hpp"
 #include "../managers/translatemgr.hpp"
 
 using namespace geode::prelude;
@@ -37,7 +38,7 @@ private:
     TabWidgets m_downloadedWidgets;
     TabWidgets m_browseWidgets;
 
-    CCLayerMultiplex* m_tabHost = nullptr;
+    CCLayerMultiplexR* m_tabHost = nullptr;
 
     GeodeTabSprite* m_downloadedTabSprite = nullptr;
     CCMenuItemSpriteExtra* m_downloadedTabBtn = nullptr;

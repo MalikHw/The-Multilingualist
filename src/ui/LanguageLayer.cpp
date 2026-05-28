@@ -139,7 +139,7 @@ void LanguageLayer::fetchLanguages() {
 
     auto req = web::WebRequest();
     m_fetchTask.spawn(
-        req.get("https://miskaa.pl/themultilinguist/languages.json"),
+        req.get("https://raw.githubusercontent.com/MalikHw/The-Multilingualist/main/db/languages.json"),
         [this](web::WebResponse res) {
             if (!res.ok()) {
                 setTabError(widgetsForTab(Tab::Browse), fmt::format("HTTP Error {}", res.code()).c_str());
@@ -475,7 +475,7 @@ void LanguageLayer::onFork(CCObject*) {
     auto alert = FLAlertLayer::create(
         nullptr,
         "Contribute",
-        "Fork the repository and add your language to <cy>resources/LANG</c> from <cy>base.json</c>.",
+        "Fork the repository and add your language to <cy>resources/lang</c> from <cy>base.json</c>.",
         "Cancel",
         "Open",
         300.f

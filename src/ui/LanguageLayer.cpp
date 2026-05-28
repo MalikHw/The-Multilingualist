@@ -140,7 +140,7 @@ void LanguageLayer::fetchLanguages() {
 
     auto req = web::WebRequest();
     m_fetchTask.spawn(
-        req.get("https://miskaa.pl/themultilinguist/languages.json"),
+        req.get("https://raw.githubusercontent.com/MalikHw/The-Multilingualist/main/db/languages.json"),
         [this](web::WebResponse res) {
             if (!res.ok()) {
                 setTabError(widgetsForTab(Tab::Browse), fmt::format("HTTP Error {}", res.code()).c_str());

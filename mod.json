@@ -9,7 +9,7 @@
 	"id": "miskaa.the-multilingualist",
 	"name": "The Multilingualist",
 	"version": "v1.0.0",
-	"developer": "miskaa",
+	"developers": ["miskaa", "MalikHw47"],
 	"description": "The Fucking Translation Mod",
 	"dependencies": {
 		"geode.node-ids": ">=v1.23.3"
@@ -17,6 +17,9 @@
 	"resources": {
 		"files": [
 			"resources/lang/*.json"
+		],
+		"sprites": [
+			"resources/button.png"
 		]
 	},
 	"settings": {

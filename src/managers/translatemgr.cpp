@@ -8,11 +8,14 @@ translatemgr& translatemgr::get() {
 }
 
 void translatemgr::load() {
-    static bool loaded = false;
-    if (loaded) return;
-    loaded = true;
+    std::filesystem::path path;
 
-    auto path = Mod::get()->getResourcesDir() / "pl_PL.json";
+    auto saved = Mod::get()->getSavedValue<std::string>("active-language", "");
+    if (!saved.empty() && std::filesystem::exists(saved)) {
+        path = saved;
+    } else {
+        path = Mod::get()->getResourcesDir() / "pl_PL.json";
+    }
 
     auto res = file::readString(path);
     if (!res) {

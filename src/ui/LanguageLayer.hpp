@@ -2,6 +2,7 @@
 
 #include <Geode/Geode.hpp>
 #include <Geode/utils/web.hpp>
+#include <Geode/ui/GeodeUI.hpp>
 #include "../managers/translatemgr.hpp"
 
 using namespace geode::prelude;
@@ -36,7 +37,7 @@ private:
     TabWidgets m_downloadedWidgets;
     TabWidgets m_browseWidgets;
 
-    CCLayerMultiplexR* m_tabHost = nullptr;
+    CCLayerMultiplex* m_tabHost = nullptr;
 
     GeodeTabSprite* m_downloadedTabSprite = nullptr;
     CCMenuItemSpriteExtra* m_downloadedTabBtn = nullptr;
@@ -89,4 +90,4 @@ private:
     void onDownloadBtn(CCObject*);
     void onApplyBtn(CCObject*);
 };
-// fuck pragmas fuck the api fuck everything
+// fuck

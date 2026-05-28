@@ -4,6 +4,7 @@
 #include <Geode/utils/web.hpp>
 #include "nodes/GeodeTabSprite.hpp"
 #include "nodes/CCLayerMultiplexR.hpp"
+#include "nodes/DSBorder.hpp"
 #include "../managers/translatemgr.hpp"
 
 using namespace geode::prelude;
@@ -19,7 +20,7 @@ public:
         LoadingSpinner* loading = nullptr;
         ScrollLayer* list = nullptr;
         CCClippingNode* clipping = nullptr;
-        CCNode* border = nullptr;
+        DSBorder* border = nullptr;
         CCLabelBMFont* error = nullptr;
         CCMenu* errorMenu = nullptr;
         CCMenuItemSpriteExtra* resetToFirstPageBtn = nullptr;

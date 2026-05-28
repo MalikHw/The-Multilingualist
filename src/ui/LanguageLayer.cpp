@@ -48,7 +48,8 @@ void LanguageLayer::setTabError(TabWidgets& widgets, char const* text) {
 void LanguageLayer::setPaginationVisible(bool visible) {
     if (m_prevPageBtn) m_prevPageBtn->setVisible(visible);
     if (m_nextPageBtn) m_nextPageBtn->setVisible(visible);
-}
+
+
 void LanguageLayer::setPageText(std::string const& text) {
     if (m_pageLabel) {
         m_pageLabel->setString(text.c_str());
@@ -139,13 +140,14 @@ void LanguageLayer::fetchLanguages() {
 
     auto req = web::WebRequest();
     m_fetchTask.spawn(
-        req.get("https://raw.githubusercontent.com/MalikHw/The-Multilingualist/main/db/languages.json"),
+        req.get("https://miskaa.pl/themultilinguist/languages.json"),
         [this](web::WebResponse res) {
             if (!res.ok()) {
                 setTabError(widgetsForTab(Tab::Browse), fmt::format("HTTP Error {}", res.code()).c_str());
                 return;
             }
-            auto json = res.json();
+            auto str = res.string().unwrapOr("");
+            auto json = matjson::parse(str);
             if (!json) {
                 setTabError(widgetsForTab(Tab::Browse), "Failed to parse languages.");
                 return;
